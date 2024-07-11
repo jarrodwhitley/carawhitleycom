@@ -1,0 +1,4 @@
+#ignore standard files
+*.npmrc
+node_modules
+*.idea
