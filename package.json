@@ -9,7 +9,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prod": "npx tailwindcss -o /src/assets/css/style.min.css --minify"
+        "dev": "vite --host",
+        "tailwind": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+        "prod": "npx tailwindcss -o ./assets/css/style.min.css --minify"
     },
     "repository": {
         "type": "git",
