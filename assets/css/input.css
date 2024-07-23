@@ -2748,3 +2748,35 @@ a {
         padding-left: 17%;
     }
 }
+
+#sticky-header {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: rgba(255, 233, 217, 0.95);
+        z-index: -1;
+        opacity: 0;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms;
+    }
+    &.is-sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        &::before {
+            background-color: rgb(255 233 217);
+            z-index: -1;
+            opacity: 1;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 500ms;
+        }
+    }
+}
