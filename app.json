@@ -1,0 +1,8 @@
+{
+    "name": "Cara Whitley",
+    "description": "Cara Whitley's Website",
+    "repository": "https://github.com/jarrodwhitley/carawhitleycom",
+    "logo": "/assets/images/cw-logo.png",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+}
